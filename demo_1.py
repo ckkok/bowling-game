@@ -1,9 +1,10 @@
 import random
 from math import floor
 
-print("=====================================")
+print("========================================")
 print("Welcome to Les Terrible Bowling Game!")
-print("=====================================")
+print("Developed by: Kopi Pasta Studios Pte Ltd")
+print("========================================")
 print()
 
 num_players = input("Enter the number of players: ")

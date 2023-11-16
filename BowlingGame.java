@@ -55,17 +55,9 @@ public class BowlingGame {
       deviation = 0.0f;
       if (player2Target == 5) {
         if (random.nextInt(2) == 0) {
-          if (!isLousyLane) {
-            deviation = random.nextFloat(-7.0f, 0.0f);
-          } else {
-            deviation = random.nextFloat(-10.0f, 1.0f);
-          }
+          deviation = random.nextFloat(-7.0f, 0.0f);
         } else {
-          if (!isLousyLane) {
-            deviation = random.nextFloat(0.0f, 7.0f);
-          } else {
-            deviation = random.nextFloat(-1.0f, 10.0f);
-          }
+          deviation = random.nextFloat(0.0f, 7.0f);
         }
       } else if (player2Target > 5 && player2Target <= 10) {
         deviation = random.nextFloat(-3.0f, 2.0f);

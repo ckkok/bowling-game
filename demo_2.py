@@ -11,9 +11,10 @@ class BowlingGame:
         self.players = [Player(i) for i in range(1, self.num_players + 1)]
 
     def show_banner(self):
-        print("=====================================")
+        print("========================================")
         print("Welcome to Les Terrible Bowling Game!")
-        print("=====================================")
+        print("Developed by: Kopi Pasta Studios Pte Ltd")
+        print("========================================")
         print()
 
     def get_inputs(self):
