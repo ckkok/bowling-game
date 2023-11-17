@@ -82,9 +82,9 @@ public class BowlingGame {
     }
     System.out.println("Game over!");
     if (s1 > s2) {
-      System.out.println("Player 1 wins! Score %d to %d".formatted(s1, s2));
+      System.out.println(String.format("Player 1 wins! Score %d to %d", s1, s2));
     } else {
-      System.out.println("Player 2 wins! Score %d to %d".formatted(s2, s1));
+      System.out.println(String.format("Player 2 wins! Score %d to %d", s2, s1));
     }
     sc.close();
   }
