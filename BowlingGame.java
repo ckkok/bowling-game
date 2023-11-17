@@ -22,21 +22,21 @@ public class BowlingGame {
       if (t1 == 5) {
         if (rndm.nextInt(2) == 0) {
           if (!laneFlag) {
-            dev = rndm.nextFloat(-7.0f, 0.0f);
+            dev = rndm.nextFloat() * 7.0f - 7.0f;
           } else {
-            dev = rndm.nextFloat(-10.0f, 1.0f);
+            dev = rndm.nextFloat() * 11.0f - 10.0f;
           }
         } else {
           if (!laneFlag) {
-            dev = rndm.nextFloat(0.0f, 7.0f);
+            dev = rndm.nextFloat() * 7.0f;
           } else {
-            dev = rndm.nextFloat(-1.0f, 10.0f);
+            dev = rndm.nextFloat() * 11.0f - 1.0f;
           }
         }
       } else if (t1 > 5 && t1 <= 10) {
-        dev = rndm.nextFloat(-3.0f, 2.0f);
+        dev = rndm.nextFloat() * 5.0f - 3.0f;
       } else if (t1 >= 0 && t1 < 5) {
-        dev = rndm.nextFloat(-2.0f, 3.0f);
+        dev = rndm.nextFloat() * 5.0f - 2.0f;
       }
       var tgt = Math.floor(t1 + dev);
       var score = 0;
@@ -55,14 +55,14 @@ public class BowlingGame {
       dev = 0.0f;
       if (t2 == 5) {
         if (rndm.nextInt(2) == 0) {
-          dev = rndm.nextFloat(-7.0f, 0.0f);
+          dev = rndm.nextFloat() * 7.0f - 7.0f;
         } else {
-          dev = rndm.nextFloat(0.0f, 7.0f);
+          dev = rndm.nextFloat() * 7.0f;
         }
       } else if (t2 > 5 && t2 <= 10) {
-        dev = rndm.nextFloat(-3.0f, 2.0f);
+        dev = rndm.nextFloat() * 5.0f - 3.0f;
       } else if (t2 >= 0 && t2 < 5) {
-        dev = rndm.nextFloat(-2.0f, 3.0f);
+        dev = rndm.nextFloat() * 5.0f - 2.0f;
       }
       tgt = Math.floor(t2 + dev);
       score = 0;
