@@ -58,4 +58,9 @@ You should tackle these one at a time sequentially.
   - What if we wanted to support up to 10 players?
 
 ## Stretch Tasks
+- Implement better bowling-like rules
+  - Players can enter up to 2 numbers per round. The scores calculated per input is totalled up to give the score for that player for that round. No more input is required if the player scores a 10.
+    - Note that the upper limit of the score from the 2nd input should be whatever is left after subtracting the 1st input's score from 10
+  - If a player scores a 10 on his first input in a round, the scores of the next 2 inputs are added to the score for this round.
+  - If a player's score totals up to 10 on his second input in a round, the score of his first input on the next round is added to his score for this round.
 - Animate the game in the console
