@@ -12,6 +12,7 @@ Everybody loves features.
 Welcome to Les Terrible Bowling Game!
 Developed by: Kopi Pasta Studios Pte Ltd
 ========================================
+
 ```
 
 2. Announce the round number loudly by printing "Round (number)!"
