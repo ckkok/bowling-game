@@ -9,7 +9,7 @@ from unittest import TestCase, mock
 class BowlingGameTest(TestCase):
     def test_game(self, mocked_input, mocked_randint, mocked_gauss):
         self.maxDiff = None
-        mocked_input.side_effect = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+        mocked_input.side_effect = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']  # The inputs entered by the user in succession, i.e. player 1 enters 1, player 2 enters 2, then player 1 enters 3, player 2 enters 4, etc
         mocked_randint.side_effect = [1, 1, 1, 1, 2, 1, 1, 1, 1, 1]  # Which side to push the ball from the center when input is 5
         mocked_gauss.side_effect = [0.5, 1.0, 0.0, 1.5, 4.5, -0.5, -1.0, 0.0, -1.5, 0.5]  # The deviation to apply
         captured_output = io.StringIO()
