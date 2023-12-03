@@ -7,14 +7,13 @@ This code simulates a simple bowling game, built by banging out some code as one
 Everybody loves features.
 
 1. When someone runs our programme, we will print the following banner, including the trailing line as whitespace separating the banner from the actual game.
-````
+```
 ========================================
 Welcome to Les Terrible Bowling Game!
 Developed by: Kopi Pasta Studios Pte Ltd
 ========================================
 ```
 
-`
 2. Announce the round number loudly by printing "Round (number)!"
 
 3. Get the first player to enter a target integer between 1 and 10 (inclusive).
